@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: fk-agent
+  ai:
+    dashscope:
+      api-key: sk-465f48a6e8964cde8726be5ccb623087
+      chat:
+        options:
+          model: qwen-plus
+    vectorstore:
+      pgvector:
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
+  datasource:
+    url: jdbc:postgresql://rm-cn-7xh4b83qg0001ngo.rwlb.rds.aliyuncs.com/fk_ai_agent
+    username: my_user
+    password: Lz0048768
+
+
+
+
